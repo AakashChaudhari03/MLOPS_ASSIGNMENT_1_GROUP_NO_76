@@ -14,3 +14,4 @@ def test_predict():
     example_input = np.array([[5.1, 3.5, 1.4, 0.2]])
     prediction = predict(model, example_input)
     assert prediction is not None
+    assert len(prediction) == 1
