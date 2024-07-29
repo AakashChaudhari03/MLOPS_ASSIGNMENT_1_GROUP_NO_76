@@ -3,9 +3,11 @@
 import pickle
 import numpy as np
 
+
 def predict(model, input_data):
     # Assuming input_data is a numpy array
     return model.predict(input_data)
+
 
 if __name__ == "__main__":
     # Load the model
