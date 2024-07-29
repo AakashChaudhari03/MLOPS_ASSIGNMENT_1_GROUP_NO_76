@@ -20,6 +20,8 @@ def train_model():
     model = RandomForestClassifier(n_estimators=100)
     model.fit(X_train, y_train)
 
+    os.makedirs('models', exist_ok=True)
+
     # Save the model
     with open('models/iris_model.pkl', 'wb') as model_file:
         pickle.dump(model, model_file)
